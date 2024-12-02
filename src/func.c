@@ -56,8 +56,12 @@ void percorrer(fila *f)
         printf("Fila vazia.\n");
     else
     {
-        for (int i = f->ini; i < (f->n + f->ini); i++)
-            printf("%d ", f->vet[i]);
+        int dim = f->n, index = f->ini;
+        for (int j = dim; j != 0; j--)
+        {
+            printf("%d ", f->vet[index]);
+            index = (index + 1) % TAM;
+        }
         printf("\n");
     }
 }
