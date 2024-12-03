@@ -4,10 +4,8 @@
 
 int main()
 {
+    fila *f = criar(f);
     int opcao = 0, v;
-
-    fila *f;
-    criar(&f);
 
     do
     {

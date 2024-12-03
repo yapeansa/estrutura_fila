@@ -2,7 +2,7 @@
 #define FUNC
 
 typedef struct fila fila;
-void criar(fila **f);
+fila *criar(fila *f);
 int inserir(fila *f, int v);
 int fila_vazia(fila *f);
 float retirar(fila *f);

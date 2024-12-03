@@ -10,12 +10,12 @@ typedef struct fila
     int ini;
 } fila;
 
-void criar(fila **f)
+fila *criar(fila *f)
 {
-    fila *tmp = (fila *)malloc(sizeof(fila));
-    tmp->n = 0;
-    tmp->ini = 0;
-    *f = tmp;
+    f = (fila *)malloc(sizeof(fila));
+    f->n = 0;
+    f->ini = 0;
+    return f;
 }
 
 int inserir(fila *f, int v)
