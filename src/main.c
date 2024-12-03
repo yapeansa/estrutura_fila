@@ -1,10 +1,10 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include "func.h"
+#include "fila.h"
 
 int main()
 {
-    fila *f = criar(f);
+    fila *f = criar();
     int opcao = 0, v;
 
     do

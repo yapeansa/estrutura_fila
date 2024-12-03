@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include "func.h"
+#include "fila.h"
 #define TAM 5
 
 typedef struct fila
@@ -10,9 +10,9 @@ typedef struct fila
     int ini;
 } fila;
 
-fila *criar(fila *f)
+fila *criar(void)
 {
-    f = (fila *)malloc(sizeof(fila));
+    fila *f = (fila *)malloc(sizeof(fila));
     f->n = 0;
     f->ini = 0;
     return f;

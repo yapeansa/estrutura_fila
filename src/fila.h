@@ -1,8 +1,8 @@
-#ifndef FUNC
-#define FUNC
+#ifndef FILA
+#define FILA
 
 typedef struct fila fila;
-fila *criar(fila *f);
+fila *criar(void);
 int inserir(fila *f, int v);
 int fila_vazia(fila *f);
 float retirar(fila *f);
