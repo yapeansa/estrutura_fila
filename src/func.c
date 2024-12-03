@@ -68,6 +68,6 @@ void percorrer(fila *f)
 
 void liberar(fila *f)
 {
-    printf("Liberando fila...");
+    printf("Liberando fila...\n");
     free(f);
 }
